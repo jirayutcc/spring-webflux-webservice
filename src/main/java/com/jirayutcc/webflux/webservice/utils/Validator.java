@@ -17,19 +17,11 @@ public class Validator {
     }
 
     public static boolean isEmpty(List<?> inputList) {
-        try {
-            return inputList.isEmpty();
-        } catch (Exception e) {
-            return false;
-        }
+        return null == inputList || inputList.isEmpty();
     }
 
     public static boolean isNotEmpty(List<?> inputList) {
-        try {
-            return !inputList.isEmpty();
-        } catch (Exception e) {
-            return false;
-        }
+        return null != inputList && !inputList.isEmpty();
     }
 
     public static boolean isNull(Object object) {
