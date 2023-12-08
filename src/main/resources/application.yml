@@ -1,0 +1,8 @@
+server:
+  port: 8088
+
+web-service:
+  timeOut: 10
+  spotifyUrl:
+    url: https://api.spotify.com
+    artist:
